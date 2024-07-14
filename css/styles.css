@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 51);
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url('https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.discover {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.discover .heading {
+    margin-bottom: 30px;
+}
+
+.discover .heading h2 {
+    font-size: 28px;
+}
+
+.discover .popular {
+    margin-top: 10px;
+}
+
+.discover .popular h3 {
+    display: inline;
+    margin-right: 10px;
+}
+
+.discover .pills {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.pill {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pill img {
+    max-width: 100%;
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+.contact h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+
+.contact_info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact_information, .hours_operation {
+    width: 48%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.contact_information h4, .hours_operation h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact_information p, .hours_operation p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer {
+    background-color: rgb(0, 0, 51);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .social-icons {
+    margin-bottom: 20px;
+}
+
+.footer .social-icons img {
+    margin: 0 10px;
+    max-width: 30px;
+}
+
+.footer_rights {
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_information, .hours_operation {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+}
